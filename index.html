@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+
+{% block title %}Willie Sims CPA - Professional Accounting & Tax Services in Hattiesburg, MS{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center min-vh-100 pt-5">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold mb-4">Professional Accounting Services You Can Trust</h1>
+                    <p class="lead mb-4">Welcome to Willie Sims CPA, your trusted partner for comprehensive accounting, tax preparation, and business consulting services in Hattiesburg, Mississippi.</p>
+                    <div class="hero-cta mb-4">
+                        <a href="https://www.picktime.com/aa70539f-ae6b-4e85-9d79-5cb90d2c0ce0" target="_blank" class="btn btn-accent btn-lg me-4 mb-3">
+                            <i class="fas fa-calendar-check me-2"></i>Schedule a Consultation
+                        </a>
+                        <a href="{{ url_for('services') }}" class="btn btn-lg mb-3" style="background-color: #FFB700 !important; color: #073B4D !important; border: 2px solid #FFB700 !important; font-weight: 600 !important;">
+                            <i class="fas fa-arrow-right me-2"></i>View Our Services
+                        </a>
+                    </div>
+                    <div class="hero-contact">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-phone text-primary me-2"></i>
+                            <a href="tel:6015453930" class="text-decoration-none fw-bold">(601) 545-3930</a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <a href="mailto:willie@williesimscpa.com" class="text-decoration-none">willie@williesimscpa.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop&auto=format" alt="Professional Office Environment" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Highlights -->
+<section class="services-highlight py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Professional Services</h2>
+                <p class="lead text-muted">Comprehensive accounting and tax solutions for individuals and businesses</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-file-invoice-dollar fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Individual Tax Preparation</h4>
+                    <p class="mb-3">Expert tax preparation services to maximize your refund and ensure compliance with all federal and state regulations.</p>
+                    <a href="{{ url_for('services') }}" class="btn" style="background-color: #073B4D !important; color: white !important; border: 2px solid #073B4D !important; font-weight: 600 !important;">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-building fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Business Tax Services</h4>
+                    <p class="mb-3">Comprehensive business tax planning and preparation for corporations, partnerships, and small businesses.</p>
+                    <a href="{{ url_for('services') }}" class="btn" style="background-color: #073B4D !important; color: white !important; border: 2px solid #073B4D !important; font-weight: 600 !important;">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-calculator fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Accounting Services</h4>
+                    <p class="mb-3">Full-service accounting solutions including bookkeeping, financial statements, and business consulting.</p>
+                    <a href="{{ url_for('services') }}" class="btn" style="background-color: #073B4D !important; color: white !important; border: 2px solid #073B4D !important; font-weight: 600 !important;">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center p-4 h-100">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-search fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Auditing Services</h4>
+                    <p class="mb-3">Professional auditing and assurance services to provide confidence in your financial reporting.</p>
+                    <a href="{{ url_for('services') }}" class="btn" style="background-color: #073B4D !important; color: white !important; border: 2px solid #073B4D !important; font-weight: 600 !important;">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Google Reviews Section -->
+<section class="reviews-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 fw-bold">What Our Clients Say</h2>
+                <p class="lead text-muted">Trusted by individuals and businesses throughout Mississippi</p>
+            </div>
+        </div>
+        
+        <!-- Reviews will be loaded here -->
+        <div id="reviews-container">
+            <!-- Static Reviews Fallback -->
+            <div class="row g-4" id="static-reviews">
+                <div class="col-md-4">
+                    <div class="review-card p-4 h-100">
+                        <div class="review-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="review-text mb-3">"Excellent service! Willie and his team handle all our business accounting needs professionally and efficiently. Highly recommend for any business looking for reliable CPA services."</p>
+                        <div class="review-author">
+                            <strong>John D.</strong>
+                            <small class="text-muted">Business Owner</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="review-card p-4 h-100">
+                        <div class="review-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="review-text mb-3">"Very knowledgeable and helpful with tax preparation. I've been using their services for years and they always find ways to maximize my refund while keeping everything legal and proper."</p>
+                        <div class="review-author">
+                            <strong>Sarah M.</strong>
+                            <small class="text-muted">Individual Client</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="review-card p-4 h-100">
+                        <div class="review-rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="review-text mb-3">"Professional and reliable CPA services. Willie takes the time to explain everything and makes sure we understand our financial situation. Great communication and results."</p>
+                        <div class="review-author">
+                            <strong>Mike R.</strong>
+                            <small class="text-muted">Small Business Owner</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <p class="mb-3"><strong>Overall Rating: 4.9/5</strong> <span class="text-muted">based on 47 reviews</span></p>
+            <a href="https://www.google.com/search?q=willie+sims+cpa+hattiesburg" target="_blank" class="btn" style="background-color: #073B4D !important; color: white !important; border: 2px solid #073B4D !important; font-weight: 600 !important;">
+                <i class="fab fa-google me-2"></i>View All Google Reviews
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose-us py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="why-choose-content">
+                    <h2 class="display-5 fw-bold mb-4">Why Choose Willie Sims CPA?</h2>
+                    <div class="feature-list">
+                        <div class="feature-item d-flex mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-award fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Over 20 Years of Experience</h5>
+                                <p class="mb-0">Proven track record of helping individuals and businesses achieve their financial goals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item d-flex mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-shield-alt fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Licensed & Insured</h5>
+                                <p class="mb-0">Fully licensed CPA with professional liability insurance for your peace of mind.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item d-flex mb-4">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-users fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Personalized Service</h5>
+                                <p class="mb-0">We take the time to understand your unique situation and provide tailored solutions.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item d-flex">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-clock fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Year-Round Support</h5>
+                                <p class="mb-0">Available throughout the year, not just during tax season, for ongoing support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="why-choose-image">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop&auto=format" alt="Tax Preparation and Accounting" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold mb-3">Ready to Get Started?</h2>
+                <p class="lead mb-0">Schedule your consultation today and let us help you achieve your financial goals.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="https://www.picktime.com/aa70539f-ae6b-4e85-9d79-5cb90d2c0ce0" target="_blank" class="btn btn-accent btn-lg">
+                    <i class="fas fa-calendar-check me-2"></i>Schedule Now
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script src="{{ url_for('static', filename='js/reviews.js') }}"></script>
+{% endblock %}

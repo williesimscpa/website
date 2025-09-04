@@ -1,0 +1,8 @@
+Improve spacing between primary action buttons on the homepage
+
+Update templates/index.html to add margin-right and margin-bottom to the "Schedule a Consultation" and "View Our Services" buttons, respectively.
+
+Replit-Commit-Author: Agent
+Replit-Commit-Session-Id: cc5cca18-d656-4120-af82-f9e3dc21e539
+Replit-Commit-Checkpoint-Type: full_checkpoint
+Replit-Commit-Screenshot-Url: https://storage.googleapis.com/screenshot-production-us-central1/0d6d5db7-1cc5-4fc2-9533-c39a475f8d8b/cc5cca18-d656-4120-af82-f9e3dc21e539/p19nZyZ

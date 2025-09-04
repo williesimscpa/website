@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery - Willie Sims CPA{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header py-5 text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Office Gallery</h1>
+        <p class="lead">Moments from our journey and community involvement</p>
+    </div>
+</section>
+
+<!-- Ribbon Cutting Gallery -->
+<section class="gallery-section py-5">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="display-5 fw-bold mb-4">Office Ribbon Cutting Ceremony</h2>
+                <p class="lead mb-4">Celebrating our commitment to serving the Hattiesburg community with professional accounting services.</p>
+            </div>
+        </div>
+        
+        <div class="row g-4 mb-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-main.jpg') }}" 
+                         class="card-img-top" alt="Ribbon Cutting Ceremony - Community Gathering" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Grand Opening Ceremony</h5>
+                        <p class="card-text text-muted">Official ribbon cutting ceremony with community leaders and supporters</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-office.png') }}" 
+                         class="card-img-top" alt="Professional Team Meeting" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Professional Network</h5>
+                        <p class="card-text text-muted">Meeting with fellow accounting professionals and business leaders</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-team1.jpg') }}" 
+                         class="card-img-top" alt="Office Celebration" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Office Celebration</h5>
+                        <p class="card-text text-muted">Celebrating the opening with team members and clients</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-team2.png') }}" 
+                         class="card-img-top" alt="Willie with Team" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Willie with Team</h5>
+                        <p class="card-text text-muted">Willie Sims with his dedicated accounting team</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-team3.png') }}" 
+                         class="card-img-top" alt="Community Leaders" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Community Leaders</h5>
+                        <p class="card-text text-muted">Gathering with Hattiesburg business and community leaders</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-team4.png') }}" 
+                         class="card-img-top" alt="Professional Networking" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Professional Networking</h5>
+                        <p class="card-text text-muted">Building relationships with local business professionals</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-team5.png') }}" 
+                         class="card-img-top" alt="Family and Friends" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Family and Friends</h5>
+                        <p class="card-text text-muted">Celebrating with family and close friends at the opening</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-team6.png') }}" 
+                         class="card-img-top" alt="Team Celebration" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Team Celebration</h5>
+                        <p class="card-text text-muted">Celebrating the milestone with our dedicated team</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Office Information -->
+<section class="office-info py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h3 class="fw-bold mb-4">Visit Our Professional Office</h3>
+                <p class="mb-4">Located in the heart of Hattiesburg, our office is designed to provide a comfortable and professional environment for all your accounting needs.</p>
+                
+                <div class="office-details">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                <strong>Address:</strong><br>
+                                908 Broadway Dr.<br>
+                                Hattiesburg, MS 39401
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-item">
+                                <i class="fas fa-phone text-primary me-2"></i>
+                                <strong>Phone:</strong><br>
+                                (601) 545-3930
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-item">
+                                <i class="fas fa-fax text-primary me-2"></i>
+                                <strong>Fax:</strong><br>
+                                (601) 545-1758
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="detail-item">
+                                <i class="fas fa-envelope text-primary me-2"></i>
+                                <strong>Email:</strong><br>
+                                willie@williesimscpa.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="office-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3438.9876543210987!2d-89.2903984!3d31.3270984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDE5JzM3LjYiTiA4OcKwMTcnMjUuNCJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade" class="rounded shadow"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,342 @@
+{% extends "base.html" %}
+
+{% block title %}About Willie Sims CPA - Professional Accounting Services in Hattiesburg, MS{% endblock %}
+
+{% block meta_description %}Learn about Willie Sims CPA, a trusted accounting professional with over 20 years of experience serving Hattiesburg, Mississippi and surrounding areas.{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center pt-5">
+                <h1 class="display-4 fw-bold mb-3">About Willie Sims CPA</h1>
+                <p class="lead">Your trusted accounting partner with over 20 years of experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="about-content py-5">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <div class="about-image">
+                    <img src="{{ url_for('static', filename='images/willie-sims-headshot.jpg') }}" alt="Willie B. Sims, Jr., CPA - Professional Headshot" class="img-fluid rounded shadow">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <h2 class="display-5 fw-bold mb-4">Willie B. Sims, Jr.</h2>
+                    <p class="fs-5 text-primary fw-bold mb-4">Certified Public Accountant</p>
+                    
+                    <div class="who-we-are mb-5">
+                        <h4 class="fw-bold text-primary mb-3">Who We Are</h4>
+                        <p class="mb-4">Established in 1999, Willie B. Sims, Jr., CPA, PLLC is a long-time standing CPA firm servicing the Hattiesburg community and surrounding southeast MS region. Our firm is committed to upholding our reputation of dedicated service to our clients while continuing to maintain our objective of providing advisory services to individuals, businesses, non-profit and government organizations. We maintain a quality control program to ensure that our work meets professional standards (we are our top priority!)</p>
+                    </div>
+
+                    <div class="credentials mb-4">
+                        <h5 class="fw-bold mb-3">Professional Credentials</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Certified Public Accountant (CPA)</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Bachelor's Degree in Accounting</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Member, American Institute of CPAs</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Member, Mississippi Society of CPAs</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Established 1999</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Team -->
+<section class="our-team py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Team</h2>
+                <p class="lead text-muted">Meet the experienced professionals dedicated to your financial success</p>
+            </div>
+        </div>
+        
+        <!-- Dorothy Parker -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-10">
+                <div class="team-member-card bg-white rounded shadow p-5 h-100">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="d-flex align-items-start">
+                                <div class="team-member-image me-4 flex-shrink-0">
+                                    <img src="{{ url_for('static', filename='images/dorothy-parker.png') }}" 
+                                         alt="Dorothy Parker - Senior Accountant" 
+                                         class="img-fluid rounded-circle shadow-lg border border-3 border-primary" 
+                                         style="width: 200px; height: 200px; object-fit: cover; object-position: center;">
+                                </div>
+                                <div class="team-member-info flex-grow-1">
+                                    <h2 class="fw-bold text-primary mb-2 display-6">Dorothy Parker</h2>
+                                    <h4 class="text-muted mb-4">Senior Accountant</h4>
+                                    
+                                    <p class="fs-5 mb-4">Dorothy Parker has been with the firm since 1995. Before working for Willie B. Sims, Jr., CPA, she attended Jackson State University and worked with the firm Dewitt Sullivan, CPA for seven years.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="experience-highlight bg-light border border-primary border-2 p-4 rounded mb-4 h-100">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-star text-primary me-3 fa-lg"></i>
+                                    <h5 class="fw-bold mb-0 text-dark">20+ Years Experience</h5>
+                                </div>
+                                <p class="mb-0 text-dark">Specializing in small business consulting, planning, accounting, tax preparation and QuickBooks solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="specialties">
+                                <h5 class="fw-bold mb-3">Areas of Expertise:</h5>
+                                <div class="expertise-tags">
+                                    <span class="badge bg-primary fs-6 me-2 mb-2 px-3 py-2">Small Business Consulting</span>
+                                    <span class="badge bg-primary fs-6 me-2 mb-2 px-3 py-2">Tax Preparation</span>
+                                    <span class="badge bg-primary fs-6 me-2 mb-2 px-3 py-2">Financial Planning</span>
+                                    <span class="badge bg-primary fs-6 me-2 mb-2 px-3 py-2">QuickBooks</span>
+                                    <span class="badge bg-primary fs-6 me-2 mb-2 px-3 py-2">Business Accounting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lacey Lott -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="team-member-card bg-white rounded shadow p-5 h-100">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="d-flex align-items-start">
+                                <div class="team-member-image me-4 flex-shrink-0">
+                                    <img src="{{ url_for('static', filename='images/lacey-lott.png') }}" 
+                                         alt="Lacey Lott - Customer Service Specialist" 
+                                         class="img-fluid rounded-circle shadow-lg border border-3 border-primary" 
+                                         style="width: 200px; height: 200px; object-fit: cover; object-position: center;">
+                                </div>
+                                <div class="team-member-info flex-grow-1">
+                                    <h2 class="fw-bold text-primary mb-2 display-6">Lacey Lott</h2>
+                                    <h4 class="text-muted mb-4">Customer Service Specialist</h4>
+                                    
+                                    <p class="fs-5 mb-4">Lacey Lott joined the team in 2021 and is dedicated to delivering excellent customer service with a personal touch. She takes pride in building strong relationships and providing support needed to keep businesses running smoothly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="experience-highlight bg-light border border-primary border-2 p-4 rounded mb-4 h-100">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-heart text-primary me-3 fa-lg"></i>
+                                    <h5 class="fw-bold mb-0 text-dark">Excellent Customer Service</h5>
+                                </div>
+                                <p class="mb-0 text-dark">Ensuring accuracy and reliability for our clients with a focus on payroll, bookkeeping, and employee taxes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="specialties">
+                                <h5 class="fw-bold mb-3">Areas of Expertise:</h5>
+                                <div class="expertise-tags">
+                                    <span class="badge bg-success fs-6 me-2 mb-2 px-3 py-2">Payroll Processing</span>
+                                    <span class="badge bg-success fs-6 me-2 mb-2 px-3 py-2">Bookkeeping</span>
+                                    <span class="badge bg-success fs-6 me-2 mb-2 px-3 py-2">Employee Taxes</span>
+                                    <span class="badge bg-success fs-6 me-2 mb-2 px-3 py-2">Customer Service</span>
+                                    <span class="badge bg-success fs-6 me-2 mb-2 px-3 py-2">Client Relations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Firm Values -->
+<section class="firm-values py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 fw-bold">Our Core Values</h2>
+                <p class="lead text-muted">The principles that guide everything we do</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="value-card text-center p-4 h-100">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-medal fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Honor</h4>
+                    <p>We conduct all business with the highest ethical standards and complete transparency in all our professional relationships.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="value-card text-center p-4 h-100">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-dumbbell fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Strength</h4>
+                    <p>Built on a foundation of expertise and reliability, providing steadfast support for all your financial needs.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="value-card text-center p-4 h-100">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-handshake fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Integrity</h4>
+                    <p>Maintaining the highest standards of professional conduct and ethical behavior in every client interaction.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="value-card text-center p-4 h-100">
+                    <div class="value-icon mb-3">
+                        <i class="fas fa-users fa-3x text-primary"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Teamwork</h4>
+                    <p>Collaborative approach ensuring every team member works together to deliver exceptional client service and results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust and Service Guarantee -->
+<section class="trust-service py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="trust-content">
+                    <h2 class="display-5 fw-bold mb-4">Our Trust and Service Guarantee</h2>
+                    <p class="lead mb-4">What makes us unique is the personal attention, commitment and accessibility that we offer to our clients.</p>
+                    
+                    <p class="mb-4">We believe that the client should come first. Each client is assigned a team that works together to ensure that planning and execution are designed specifically to meet their individual situation. Our goal is to provide everyone working with a firm that is driven to create a pleasant and satisfying experience by building a team approach to the practice providing the highest level quality service.</p>
+                    
+                    <blockquote class="blockquote text-primary fs-5 fst-italic mt-4 mb-4 border-start border-primary border-3 ps-4">
+                        "Our desire is to be a firm who honors and serves God by serving each other and others with truth, honor, integrity and love."
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="trust-image">
+                    <img src="https://pixabay.com/get/gde899b466284a71712ac18e89943e621f6323bda372a9844057138bff5f06b7823c237efbf0cb682912da9c8091ddf6b488bd2bdf7c778b63c1d82b930fd6c26_1280.jpg" alt="Professional Team Meeting" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+        
+        <div class="row g-3 mt-5">
+            <div class="col-6 col-md-3">
+                <div class="stat-item text-center p-3 bg-light rounded">
+                    <h3 class="fw-bold text-primary mb-1">25+</h3>
+                    <p class="mb-0 small">Years of Service</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-item text-center p-3 bg-light rounded">
+                    <h3 class="fw-bold text-primary mb-1">500+</h3>
+                    <p class="mb-0 small">Satisfied Clients</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-item text-center p-3 bg-light rounded">
+                    <h3 class="fw-bold text-primary mb-1">100+</h3>
+                    <p class="mb-0 small">Local Businesses</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="stat-item text-center p-3 bg-light rounded">
+                    <h3 class="fw-bold text-primary mb-1">4.9★</h3>
+                    <p class="mb-0 small">Client Rating</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold mb-3">Experience the Difference</h2>
+                <p class="lead mb-0">Join the hundreds of satisfied clients who trust Willie Sims CPA with their financial needs.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="https://www.picktime.com/aa70539f-ae6b-4e85-9d79-5cb90d2c0ce0" target="_blank" class="btn btn-accent btn-lg">
+                    <i class="fas fa-calendar-check me-2"></i>Schedule Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Preview -->
+<section class="gallery-preview py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="display-5 fw-bold mb-4">Office Moments</h2>
+                <p class="lead">Take a look at moments from our journey and community involvement.</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-main.jpg') }}" 
+                         class="card-img-top" alt="Ribbon Cutting Ceremony" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center p-3">
+                        <h6 class="card-title text-primary mb-1">Grand Opening</h6>
+                        <p class="card-text text-muted mb-0 small">Ribbon cutting ceremony</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-team2.png') }}" 
+                         class="card-img-top" alt="Willie with Team" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center p-3">
+                        <h6 class="card-title text-primary mb-1">Our Team</h6>
+                        <p class="card-text text-muted mb-0 small">Willie with colleagues</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="{{ url_for('static', filename='images/ribbon-cutting-team3.png') }}" 
+                         class="card-img-top" alt="Community Leaders" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center p-3">
+                        <h6 class="card-title text-primary mb-1">Community</h6>
+                        <p class="card-text text-muted mb-0 small">Business leaders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="{{ url_for('gallery') }}" class="btn btn-primary btn-lg">
+                <i class="fas fa-images me-2"></i>View Full Gallery
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

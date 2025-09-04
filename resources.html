@@ -1,0 +1,385 @@
+{% extends "base.html" %}
+
+{% block title %}Client Resources - Willie Sims CPA Hattiesburg, MS{% endblock %}
+
+{% block meta_description %}Access helpful tax tips, financial resources, and secure client portal for Willie Sims CPA clients in Hattiesburg, Mississippi.{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center pt-5">
+                <h1 class="display-4 fw-bold mb-3">Client Resources</h1>
+                <p class="lead">Helpful tools, tips, and secure portal access for our valued clients</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Client Portal -->
+<section class="client-portal py-5">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <div class="portal-content">
+                    <h2 class="display-5 fw-bold mb-4">Secure Client Portal</h2>
+                    <p class="lead mb-4">Access your documents, tax returns, and communicate securely with our team through our encrypted client portal.</p>
+                    
+                    <div class="portal-features mb-4">
+                        <div class="feature-item d-flex mb-3">
+                            <i class="fas fa-shield-alt text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Bank-Level Security</h6>
+                                <p class="mb-0 small text-muted">Your sensitive documents are protected with enterprise-grade encryption</p>
+                            </div>
+                        </div>
+                        <div class="feature-item d-flex mb-3">
+                            <i class="fas fa-file-pdf text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Document Access</h6>
+                                <p class="mb-0 small text-muted">View and download your tax returns, financial statements, and reports</p>
+                            </div>
+                        </div>
+                        <div class="feature-item d-flex mb-3">
+                            <i class="fas fa-upload text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Secure File Sharing</h6>
+                                <p class="mb-0 small text-muted">Safely upload documents and receipts directly to our team</p>
+                            </div>
+                        </div>
+                        <div class="feature-item d-flex">
+                            <i class="fas fa-comments text-primary me-3 mt-1"></i>
+                            <div>
+                                <h6 class="fw-bold mb-1">Direct Communication</h6>
+                                <p class="mb-0 small text-muted">Message our team securely without email concerns</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portal-buttons">
+                        <button class="btn btn-primary btn-lg me-3" data-bs-toggle="modal" data-bs-target="#portalAccessModal">
+                            <i class="fas fa-sign-in-alt me-2"></i>Request Portal Access
+                        </button>
+                        <a href="tel:6015453930" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-phone me-2"></i>Need Help?
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="portal-image">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop&auto=format" alt="Secure Client Portal" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tax Resources -->
+<section class="tax-resources py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 fw-bold">Tax Planning Resources</h2>
+                <p class="lead text-muted">Essential tools and information to help you stay organized</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="resource-card p-4 h-100">
+                    <div class="resource-icon mb-3">
+                        <i class="fas fa-file-alt fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Tax Organizer</h5>
+                    <p class="mb-3">Download our comprehensive tax organizer to gather all necessary documents for your tax preparation.</p>
+                    <a href="http://www.williesimscpa.com/Tax_organizer_Doc_2023_TY.pdf" target="_blank" class="btn btn-outline-primary">
+                        <i class="fas fa-download me-2"></i>Download PDF
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="resource-card p-4 h-100">
+                    <div class="resource-icon mb-3">
+                        <i class="fas fa-calendar-alt fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Tax Calendar</h5>
+                    <p class="mb-3">Important tax deadlines and due dates for individuals and businesses throughout the year.</p>
+                    <a href="https://www.irs.gov/businesses/small-businesses-self-employed/tax-calendar" target="_blank" class="btn btn-outline-primary">
+                        <i class="fas fa-eye me-2"></i>View IRS Calendar
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="resource-card p-4 h-100">
+                    <div class="resource-icon mb-3">
+                        <i class="fas fa-receipt fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Deduction Tracker</h5>
+                    <p class="mb-3">Keep track of your deductible expenses throughout the year with our handy tracker.</p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">
+                        <i class="fas fa-envelope me-2"></i>Request Tracker
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="resource-card p-4 h-100">
+                    <div class="resource-icon mb-3">
+                        <i class="fas fa-calculator fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Tax Estimator</h5>
+                    <p class="mb-3">Estimate your quarterly tax payments and avoid underpayment penalties.</p>
+                    <a href="https://apps.irs.gov/app/tax-withholding-estimator" target="_blank" class="btn btn-outline-primary">
+                        <i class="fas fa-external-link-alt me-2"></i>IRS Estimator
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="resource-card p-4 h-100">
+                    <div class="resource-icon mb-3">
+                        <i class="fas fa-chart-line fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Business Metrics</h5>
+                    <p class="mb-3">Key performance indicators and financial ratios to monitor your business health.</p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">
+                        <i class="fas fa-envelope me-2"></i>Get Guidance
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="resource-card p-4 h-100">
+                    <div class="resource-icon mb-3">
+                        <i class="fas fa-question-circle fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">FAQ</h5>
+                    <p class="mb-3">Frequently asked questions about tax preparation, accounting, and our services.</p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">
+                        <i class="fas fa-question me-2"></i>Ask Questions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Financial Tips -->
+<section class="financial-tips py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 fw-bold">Financial Tips & Articles</h2>
+                <p class="lead text-muted">Expert advice to help you make informed financial decisions</p>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <article class="tip-card h-100">
+                    <div class="tip-content p-4">
+                        <div class="tip-category mb-2">
+                            <span class="badge bg-primary">Tax Planning</span>
+                        </div>
+                        <h5 class="fw-bold mb-3">Year-End Tax Strategies</h5>
+                        <p class="mb-3">Maximize your tax savings with these proven year-end planning strategies that can significantly reduce your tax liability.</p>
+                        <div class="tip-meta small text-muted">
+                            <i class="fas fa-clock me-1"></i>5 min read
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="tip-card h-100">
+                    <div class="tip-content p-4">
+                        <div class="tip-category mb-2">
+                            <span class="badge bg-success">Business</span>
+                        </div>
+                        <h5 class="fw-bold mb-3">Cash Flow Management</h5>
+                        <p class="mb-3">Essential techniques for maintaining healthy cash flow in your business, including forecasting and collection strategies.</p>
+                        <div class="tip-meta small text-muted">
+                            <i class="fas fa-clock me-1"></i>7 min read
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="tip-card h-100">
+                    <div class="tip-content p-4">
+                        <div class="tip-category mb-2">
+                            <span class="badge bg-info">Personal Finance</span>
+                        </div>
+                        <h5 class="fw-bold mb-3">Retirement Planning Basics</h5>
+                        <p class="mb-3">Start planning for your future with these fundamental retirement planning strategies and contribution limits.</p>
+                        <div class="tip-meta small text-muted">
+                            <i class="fas fa-clock me-1"></i>6 min read
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="tip-card h-100">
+                    <div class="tip-content p-4">
+                        <div class="tip-category mb-2">
+                            <span class="badge bg-warning text-dark">Record Keeping</span>
+                        </div>
+                        <h5 class="fw-bold mb-3">Document Organization</h5>
+                        <p class="mb-3">Learn how to organize your financial documents for easy access and tax preparation efficiency.</p>
+                        <div class="tip-meta small text-muted">
+                            <i class="fas fa-clock me-1"></i>4 min read
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="tip-card h-100">
+                    <div class="tip-content p-4">
+                        <div class="tip-category mb-2">
+                            <span class="badge bg-success">Business</span>
+                        </div>
+                        <h5 class="fw-bold mb-3">QuickBooks Best Practices</h5>
+                        <p class="mb-3">Get the most out of your accounting software with these professional tips and setup recommendations.</p>
+                        <div class="tip-meta small text-muted">
+                            <i class="fas fa-clock me-1"></i>8 min read
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <article class="tip-card h-100">
+                    <div class="tip-content p-4">
+                        <div class="tip-category mb-2">
+                            <span class="badge bg-primary">Tax Planning</span>
+                        </div>
+                        <h5 class="fw-bold mb-3">Small Business Deductions</h5>
+                        <p class="mb-3">Discover often-overlooked business deductions that could save your company thousands in taxes.</p>
+                        <div class="tip-meta small text-muted">
+                            <i class="fas fa-clock me-1"></i>6 min read
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Signup -->
+<section class="newsletter-signup py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h3 class="fw-bold mb-3">Stay Informed</h3>
+                <p class="lead mb-0">Subscribe to our newsletter for the latest tax updates, financial tips, and important deadline reminders.</p>
+            </div>
+            <div class="col-lg-6">
+                <form class="newsletter-form" action="{{ url_for('contact') }}" method="get">
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-lg" name="email" placeholder="Enter your email address" required>
+                        <button class="btn btn-primary btn-lg" type="submit">
+                            <i class="fas fa-paper-plane me-2"></i>Subscribe
+                        </button>
+                    </div>
+                    <small class="text-muted mt-2 d-block">We respect your privacy. No spam, unsubscribe anytime.</small>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold mb-3">Need Personalized Advice?</h2>
+                <p class="lead mb-0">Our resources are helpful, but personalized guidance is invaluable. Schedule a consultation today.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="https://www.picktime.com/aa70539f-ae6b-4e85-9d79-5cb90d2c0ce0" target="_blank" class="btn btn-accent btn-lg">
+                    <i class="fas fa-calendar-check me-2"></i>Schedule Consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portal Access Modal -->
+<div class="modal fade" id="portalAccessModal" tabindex="-1" aria-labelledby="portalAccessModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="portalAccessModalLabel">
+                    <i class="fas fa-shield-alt me-2"></i>Client Portal Access
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="access-instructions">
+                    <div class="instruction-icon text-center mb-4">
+                        <i class="fas fa-lock fa-3x text-primary"></i>
+                    </div>
+                    
+                    <h6 class="fw-bold mb-3">How to Get Portal Access:</h6>
+                    
+                    <div class="instruction-steps">
+                        <div class="step-item d-flex mb-3">
+                            <div class="step-number bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-size: 14px; font-weight: bold;">1</div>
+                            <div>
+                                <strong>Contact Our Team</strong><br>
+                                <small class="text-muted">Call or email us to request your secure login credentials</small>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item d-flex mb-3">
+                            <div class="step-number bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-size: 14px; font-weight: bold;">2</div>
+                            <div>
+                                <strong>Verify Your Identity</strong><br>
+                                <small class="text-muted">We'll verify your information to ensure account security</small>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item d-flex mb-4">
+                            <div class="step-number bg-primary text-white rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px; font-size: 14px; font-weight: bold;">3</div>
+                            <div>
+                                <strong>Receive Login Credentials</strong><br>
+                                <small class="text-muted">We'll provide your username and temporary password securely</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-options bg-light p-3 rounded">
+                        <h6 class="fw-bold mb-3">Contact Options:</h6>
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                                <a href="tel:6015453930" class="btn btn-outline-primary w-100">
+                                    <i class="fas fa-phone me-2"></i>Call: (601) 545-3930
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="mailto:willie@williesimscpa.com" class="btn btn-outline-primary w-100">
+                                    <i class="fas fa-envelope me-2"></i>Email Willie
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">
+                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

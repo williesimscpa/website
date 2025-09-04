@@ -1,0 +1,327 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Willie Sims CPA - Hattiesburg, MS Accounting Services{% endblock %}
+
+{% block meta_description %}Contact Willie Sims CPA in Hattiesburg, MS. Call (601) 545-3930 or visit our office at 908 Broadway Dr. Professional accounting and tax services.{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center pt-5">
+                <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+                <p class="lead">Get in touch with our professional accounting team</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information -->
+<section class="contact-info py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-card text-center p-4 h-100">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-phone fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Phone</h5>
+                    <p class="mb-2">
+                        <a href="tel:6015453930" class="text-decoration-none">(601) 545-3930</a>
+                    </p>
+                    <small class="text-muted">Monday - Friday<br>8:00 AM - 5:00 PM</small>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-card text-center p-4 h-100">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-envelope fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Email</h5>
+                    <p class="mb-2">
+                        <a href="mailto:willie@williesimscpa.com" class="text-decoration-none">willie@williesimscpa.com</a>
+                    </p>
+                    <small class="text-muted">We respond within<br>24 hours</small>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-card text-center p-4 h-100">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Address</h5>
+                    <p class="mb-2">908 Broadway Dr.<br>Hattiesburg, MS 39401</p>
+                    <small class="text-muted">Free parking<br>available</small>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-3">
+                <div class="contact-card text-center p-4 h-100">
+                    <div class="contact-icon mb-3">
+                        <i class="fas fa-fax fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-bold mb-3">Fax</h5>
+                    <p class="mb-2">(601) 545-1758</p>
+                    <small class="text-muted">Secure document<br>transmission</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form and Map -->
+<section class="contact-form-section py-5 bg-light">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+                <div class="contact-form-container">
+                    <h2 class="display-5 fw-bold mb-4">Send Us a Message</h2>
+                    <p class="lead mb-4">Have questions about our services? Fill out the form below and we'll get back to you promptly.</p>
+                    
+                    <!-- Flash Messages -->
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }} alert-dismissible fade show" role="alert">
+                                    {{ message }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                    
+                    <form method="POST" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="service" class="form-label">Service Interested In</label>
+                                <select class="form-select" id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="individual-tax">Individual Tax Preparation</option>
+                                    <option value="business-tax">Business Tax Services</option>
+                                    <option value="accounting">Accounting & Bookkeeping</option>
+                                    <option value="auditing">Auditing Services</option>
+                                    <option value="consultation">General Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Please describe how we can help you..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="consent" required>
+                                    <label class="form-check-label" for="consent">
+                                        I consent to Willie Sims CPA contacting me regarding my inquiry. *
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Map -->
+            <div class="col-lg-6">
+                <div class="map-container">
+                    <h3 class="fw-bold mb-4">Find Our Office</h3>
+                    <div class="map-embed">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.123!2d-89.290123!3d31.32789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x862aa123456789ab%3A0x123456789abcdef0!2s908%20Broadway%20Dr%2C%20Hattiesburg%2C%20MS%2039401!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="rounded shadow">
+                        </iframe>
+                    </div>
+                    
+                    <div class="office-hours mt-4 p-4 bg-white rounded shadow">
+                        <h5 class="fw-bold mb-3">Office Hours</h5>
+                        <div class="hours-list">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Monday - Friday:</span>
+                                <span class="fw-bold">8:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Saturday:</span>
+                                <span class="text-muted">By Appointment</span>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>Sunday:</span>
+                                <span class="text-muted">Closed</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <small class="text-muted">
+                            <i class="fas fa-info-circle me-1"></i>
+                            Extended hours available during tax season (January - April)
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="contact-faq py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 fw-bold">Frequently Asked Questions</h2>
+                <p class="lead text-muted">Quick answers to common questions about our services</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                What should I bring to my first appointment?
+                            </button>
+                        </h3>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                For tax preparation, bring all relevant tax documents including W-2s, 1099s, receipts for deductions, and last year's tax return. For business consultations, bring financial statements, bank statements, and any specific questions or concerns you have.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                How much do your services cost?
+                            </button>
+                        </h3>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our fees vary depending on the complexity of your situation and the services needed. We provide transparent pricing and will discuss all costs upfront during your consultation. Contact us for a personalized quote.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Do you offer virtual consultations?
+                            </button>
+                        </h3>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Yes, we offer virtual consultations via phone or video call for your convenience. We can also work with clients remotely using our secure client portal for document sharing and communication.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                When is the best time to contact you during tax season?
+                            </button>
+                        </h3>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                During tax season (January through April), we recommend scheduling appointments as early as possible. We're typically busiest in March and early April, so February appointments often allow for more personalized attention.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Online Scheduling CTA -->
+<section class="scheduling-cta py-5 bg-primary text-white">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold mb-3">Prefer to Schedule Online?</h2>
+                <p class="lead mb-0">Use our convenient online scheduling system to book your consultation at a time that works for you.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="https://www.picktime.com/aa70539f-ae6b-4e85-9d79-5cb90d2c0ce0" target="_blank" class="btn btn-accent btn-lg">
+                    <i class="fas fa-calendar-check me-2"></i>Schedule Online
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Form validation and enhancement
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('.contact-form');
+    
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            const requiredFields = form.querySelectorAll('[required]');
+            let allValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    allValid = false;
+                } else {
+                    field.classList.remove('is-invalid');
+                    field.classList.add('is-valid');
+                }
+            });
+            
+            // Email validation
+            const emailField = form.querySelector('#email');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (emailField.value && !emailRegex.test(emailField.value)) {
+                emailField.classList.add('is-invalid');
+                allValid = false;
+            }
+            
+            if (!allValid) {
+                e.preventDefault();
+            }
+        });
+        
+        // Real-time validation
+        const inputs = form.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.hasAttribute('required') && !this.value.trim()) {
+                    this.classList.add('is-invalid');
+                } else {
+                    this.classList.remove('is-invalid');
+                    this.classList.add('is-valid');
+                }
+            });
+        });
+    }
+});
+</script>
+{% endblock %}
